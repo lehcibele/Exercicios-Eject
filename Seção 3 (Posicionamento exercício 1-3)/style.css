@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background: #F7F7F7;
+    display: grid;
+    gap: 60px;
+    justify-items: center;
+    margin-top: 60px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a { 
+    text-decoration: none;
+}
+
+p, h1, h2, h3 {
+    margin: 0px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap; /*Quebra o conteudo da barra de menu para outra linha a medida que a tela vai diminuindo */
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu a {
+    background: #FFFFFF;
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+}
+
+.introducao {
+    background: #FFFFFF;
+    padding: 40px;
+    text-align: right;
+    position: relative; /*Faz com que o detalhe fique referente a class introdução e não ao body  */
+    display: grid; /*Faz com que a div com class introducao fique todo como um display grid */
+    align-content: center; /*Alinha todo o conteudo da class introducao ao centro */
+    gap: 20px; /*Separa os conteudos dentro da class introducao */
+    justify-items: end; /*Faz com que os elementos fiquem alinhados ao final */
+}
+
+/*Traço vermelho, o position absolute faz com que o span sai do fluxo normal  */
+.detalhe {
+    width: 60px;
+    height: 4px;
+    background: #EE2211;
+/*  display: inline-block; Não precisa mais, pois na class introducao foi definido como display grid  */
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.botao {
+    background: #EE2211;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    font-size: 64px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0, 0.2);
+    text-align: right;
+    padding: 40px;
+    align-self: center;
+}
+
+.vantagens {
+    background: #FFFFFF;
+    padding: 40px;
+}
+
+.vantagens-item {
+    display: grid;
+    grid-template-columns: auto 1fr; /*O valor auto faz com que a 1 coluna fique do tamanho da imagem e o 1fr cria a 2 coluna*/
+    gap: 10px 20px; /*O primeiro valor é referente a distancia entre as linhas e o segundo valor a distancia entre as colunas */
+    padding: 20px;
+
+}
+
+.vantagens-item p {
+    grid-column: 2; /*Faz com que os textos dos paragrafos fiquem na 2 coluna  */  
+}
+
+.rodape {
+    background: #FFFFFF;
+    width: 100%; /*Como o body está definido com o display: grid; o elemento não se comporta mais como elemento de bloco, ou seja, não ocupa mais toda a largura da tela, com o width: 100%; o elemento passa a ocupar toda a tela disponivel */
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box; /*Faz com que o elemento não estoure alem dos 100% definidos, pois com o padding de 40px todo o conteúdo passou a ter 100% da tela + 40 de padding de um lado + 40 padding de outro, logo tendo 100% da tela + 80 px, para que não ocorra o estouro do conteúdo foi colocado o box-sizing: border-box, assim não irá somar o valor do width com o padding, respeitando o valor do width  */
+}
