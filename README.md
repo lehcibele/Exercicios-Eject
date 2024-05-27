@@ -4,7 +4,7 @@
 
 ### Card amarelo 
 
-Link do repositório: https://github.com/lehcibele/card-amarelo
+Link do repositório: https://github.com/lehcibele/card-amarelo  
 Link do site: https://lehcibele.github.io/card-amarelo/
 
 ### Página de receita
