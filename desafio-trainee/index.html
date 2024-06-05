@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esportes</title>
+    <link rel="stylesheet" href="src/style/reset.css">
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <!--Menu -->
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="src/img/logo.png" alt="Logo Esportes">
+            </div>
+
+            <ul class="navbar-menu">
+                <li><a class="navbar-link" href="#home">Home</a></li>
+                <li><a class="navbar-link" href="#sobre">Sobre</a></li>
+                <li><a class="navbar-link" href="#servicos">Serviços</a></li>
+                <li><a class="navbar-link" href="#duvidas">Dúvidas</a></li>
+                <li><a class="navbar-link" href="#contato">Contato</a></li>
+            </ul>
+
+            <!--Icon do menu mobile-->
+            <div class="menu-mobile-icon" id="menu-icon">
+                <button><img src="src/img/menu-hamburgue.png"></button>
+            </div>
+        </nav>
+
+        <!--Menu mobile-->
+        <nav class="menu-mobile" id="menu-mobile">
+            <ul>
+                <li><a class="navbar-link" href="#home">Home</a></li>
+                <li><a class="navbar-link" href="#sobre">Sobre</a></li>
+                <li><a class="navbar-link" href="#servicos">Serviços</a></li>
+                <li><a class="navbar-link" href="#duvidas">Dúvidas</a></li>
+                <li><a class="navbar-link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="overlay-menu" id="overlay-menu"></div>
+    </header>
+
+    <section class="container-homer" id="home">
+
+        <div class="slider">
+
+            <div class="slide-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="src/img/imagem1-desktop.png" alt="">
+                    <img class="img-mobile" src="src/img/imagem1-mobile.png" alt="">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="src/img/imagem1-desktop.png" alt="">
+                    <img class="img-mobile" src="src/img/imagem1-mobile.png" alt="">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="src/img/imagem1-desktop.png" alt="">
+                    <img class="img-mobile" src="src/img/imagem1-mobile.png" alt="">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+
+            </div>
+        </div>
+
+        <h1 class="titulo-homer">Lorem ipsum dolor sit a</h1>
+    </section>
+
+    <section class="container-sobre" id="sobre">
+
+        <div class="sobre-imagens">
+            <img class="img-1" src="src/img/image1.png" alt="Natação">
+            <img class="img-2" src="src/img/image2.png" alt="Volei">
+            <img class="img-3" src="src/img/image3.png" alt="Malhar">
+        </div>
+
+        <div class="sobre-conteudo">
+            <h1 class="sobre-titulo">Sobre</h1>
+            <p class="sobre-texto">
+                Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales. Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales. Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales. Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales. 
+            </p>
+        </div>
+        
+    </section>
+
+    
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

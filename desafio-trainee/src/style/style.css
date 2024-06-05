@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*INICIO - ESTILO DO CABEÇALHO */
+.navbar {
+    background-color: #06121E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    margin: 1.38rem  0 1.38rem 9.4rem;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 2.56rem;
+    margin: 1.88rem 8.88rem 1.75rem;
+}
+
+.navbar-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    font-style: normal;
+}
+
+/* ESTILO DO MENU MOBILE */
+.menu-mobile-icon {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+/*FIM - ESTILO DO CABEÇALHO */
+
+/*INICIO - ESTILO SEÇÃO HOMER */
+
+    /*INICIO - ESTILO DO CARROSSEL */
+.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden; /* Esconde as outras imagens se passarem da largura definida */
+}
+
+.slide-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slide-content input, .img-mobile {
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+.nav-manual, .nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #979797;
+    width: 0.688rem;
+    height: 0.688rem;
+    transition: 0.2s;
+    z-index: 3;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 0.44rem;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #CCC2C2;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1 {
+    background-color: #CCC2C2;
+    z-index: 4;
+
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background-color: #CCC2C2;
+    z-index: 4;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3 {
+    background-color: #CCC2C2;
+    z-index: 4;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left: -50%;
+}
+    /*FIM - ESTILO DO CARROSSEL */
+
+.container-homer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.container-homer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(6, 18, 30, 0.37) 0%, #06121E 85.64%);
+    z-index: 1;
+}
+
+.titulo-homer {
+    color: #F4F4F4;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.88rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/*FIM - ESTILO SEÇÃO HOMER */
+
+/*INICIO - ESTILO SEÇÃO SOBRE */
+.container-sobre {
+    background-color: #F4F4F4;
+    display: flex;
+    gap: 107px;
+}
+
+.sobre-imagens {
+    margin: 5.31rem 0 5.38rem 9.38rem;
+    background-color: lightcoral;
+}
+
+
+.img-1 {
+    margin-left: 15.13rem;
+    margin-right: 3.13rem;
+}
+
+.img-2 {
+    margin: -2.25rem 0px 0px 21.3rem;
+}
+
+.img-3 {
+    
+} 
+
+.sobre-conteudo {    
+    max-width: 464px;
+    margin: 85px 150px 86px 0px;
+}
+
+.sobre-titulo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #06121E;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.sobre-titulo::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background-color: #06121E;
+    position: absolute;
+    margin-top: -5px;
+}
+
+.sobre-texto {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #06121E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/*FIM - ESTILO SEÇÃO SOBRE */
+
+
+
+@media (max-width: 1000px) {
+    /*ESTILO MENU DESKTOP */
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+
+    .navbar-logo {
+        margin: 1rem auto;
+    }
+
+    .navbar-menu {
+        flex-wrap: wrap;
+        margin: 1rem 1rem;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /*ESTILO MENU MOBILE */
+    .nav-auto, .nav-manual {
+        margin-top: 40%;
+    }
+
+    .titulo-homer {
+        color: #F4F4F4;
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.75rem;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+    /* ESTILO DO MENU MOBILE */
+    .navbar-logo {
+        margin-left: 1.38rem;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .menu-mobile-icon {
+        display: block;
+        margin-right: 1.3rem;
+
+    }
+
+    .menu-mobile-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-mobile {
+        display: block;
+        background-color: #06121E;
+        position: fixed;
+        top: 80;
+        right: 0;
+        z-index: 999999;
+        width: 0%;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        gap: 3.13rem;
+        text-align: center;
+        margin: 3.25rem auto 46.88rem;
+    }
+
+    .menu-mobile a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .overlay-menu {
+        background-color: #F4F4F4;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 80;
+        left: 0;
+        z-index: 888888;
+        display: none;
+    }
+
+    /*Class .abrir-menu criado com Javascript */
+    .menu-mobile.abrir-menu {
+        width: 50%;
+    }
+
+    .menu-mobile.abrir-menu ~ .overlay-menu {
+        display: block;
+    }
+
+    /*ESTILO CARROSSEL MOBILE */
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+
+    .nav-auto, .nav-manual {
+        
+        margin-top: 84%;
+    }
+}
